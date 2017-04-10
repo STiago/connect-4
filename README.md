@@ -6,7 +6,7 @@ The objective of the game is to be the first to form a horizontal, vertical, or 
 
 Details: https://en.wikipedia.org/wiki/Connect_Four
 
-![Connect-four](https://github.com/STiago/connect-4/blob/master/images/connect-four.png)
+![Connect-four](https://github.com/STiago/connect-4/blob/master/images/connect-4.png)
 
 [Connect Four](https://stiago.github.io/connect-4/)
 
