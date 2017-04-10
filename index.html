@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect Four</title>
+
+  <!-- Bootstrap -->
+  <link href="./css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">
+          <img alt="Game" src="./images/brand.jpg">
+        </a>
+      </div>
+      <h1 class="navbar-text">Connect Four</h1>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <table class="table-board">
+        <tr id="row5">
+          <td>
+            <a id="cell00" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell01" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell02" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell03" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell04" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell05" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell06" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+        <tr id="row4">
+          <td>
+            <a id="cell10" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell11" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell12" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell13" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell14" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell15" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell16" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+        <tr id="row3">
+          <td>
+            <a id="cell20" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell21" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell22" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell23" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell24" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell25" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell26" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+        <tr id="row2">
+          <td>
+            <a id="cell30" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell31" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell32" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell33" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell34" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell35" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell36" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+        <tr id="row1">
+          <td>
+            <a id="cell40" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell41" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell42" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell43" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell44" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell45" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell46" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+        <tr id="row0">
+          <td>
+            <a id="cell50" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell51" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell52" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell53" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell54" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell55" class="btn btn-default btn-circle"></a>
+          </td>
+          <td>
+            <a id="cell56" class="btn btn-default btn-circle"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-sm-4">
+      <div>
+        <button type="button" class="btn btn-info" id="new-game">New game</button>
+        <h4>Select an opponent:</h4> Human
+        <label class="switch">
+          <input type="checkbox" id="opponent">
+          <div class="slider round"></div>
+        </label>
+        Computer
+      </div>
+      <div class="game-info">
+        <h4>Turn: <em id="game-player-turn">Player 1</em></h4>
+        <h4 id="game-result-message"></h4>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2017 GitHub: <a href="https://github.com/STiago">@STiago</a> - LinkedIn: <a href="https://www.linkedin.com/in/victoria-alcala/">Victoria Santiago Alcala </a></p>
+  </footer>
+  <script src="./js/connect4-bundle.js"></script>
+</body>
+
+</html>
