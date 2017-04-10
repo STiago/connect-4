@@ -4,6 +4,8 @@ Connect four is a two-player connection game in which the players first choose a
 
 The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. Connect Four is a solved game. The first player can always win by playing the right moves.
 
+Play the game: [Play NOW](https://stiago.github.io/connect-4/)
+
 How to run the game: open the file index.html in a modern browser 
 
 If you want to run the tests I wrote for this game please execute the following commands (npm needs to be installed in your system):
