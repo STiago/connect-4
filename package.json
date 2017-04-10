@@ -1,0 +1,23 @@
+{
+  "name": "connect-four-js",
+  "version": "1.0.0",
+  "description": "Connect four game - Junior Frontend Developer Test",
+  "main": "Game.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "connect",
+    "four",
+    "game",
+    "junior",
+    "frontend",
+    "developer",
+    "test"
+  ],
+  "author": "M Victoria Santiago Alcala",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}
